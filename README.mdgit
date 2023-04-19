@@ -1,0 +1,1 @@
+# LinQ3QA initgit add .git commit -m Basegit branch -M maingit remote add origin https://github.com/Facundo1213/LinQ3QA.gitgit push -u origin main
