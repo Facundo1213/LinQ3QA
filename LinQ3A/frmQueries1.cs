@@ -19,7 +19,8 @@ namespace EjemplosWin
         private void btnQuery2_Click(object sender, EventArgs e)
         {
             var colecion = from empleado in Empleado.empleados
-                           join empresa in Empresa.Empre on empleado.EmpresaId equals empresa.Id
+                           join empresa in Empresa.Empre on empleado.EmpresaId equals empresa.Id 
+                           where empleado.Estado == "Ausente"
                            select new
                            {
                                EmpresaId = empresa.Nombre + " " + empleado.EmpresaId,
@@ -62,13 +63,16 @@ namespace EjemplosWin
 
         private void btnQuery5_Click(object sender, EventArgs e)
         {
-            var coleccion = from Control ctl in this.Controls
-                            select new
-                            {
-                                Control = ctl.Name,
-                                Texto = ctl.Text
-                            };
-            grvResultados.DataSource = coleccion.ToList();
+            var colecion = from empleado in Empleado.empleados
+                           join empresa in Empresa.Empre on empleado.EmpresaId equals empresa.Id
+                           select new
+                           {
+                               Empresa = empresa.Nombre,
+                               Salario = Math.Abs(empleado.Salario),
+                               
+
+                           }; ;
+            grvResultados.DataSource = colecion.ToList();
             //muestras los botones con su nombre y contenido
         }
 
@@ -102,6 +106,18 @@ namespace EjemplosWin
         private void grvResultados_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            var colecion = from empleados in Empleado.empleados
+                           where empleados.Cargo == "Junior"
+                           select new
+                           {
+                               Cargo = empleados.Cargo,
+                               Nombre = empleados.Nombre,
+                           };
+            grvResultados.DataSource = colecion.ToList();
         }
     }
 }

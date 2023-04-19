@@ -24,7 +24,10 @@ namespace EjemplosWin
             new Empleado { Id = 9, Nombre = "Carlos", Cargo = "Desarrollador", EmpresaId = 6, Salario = 6000, Estado = "Trabajando" },
             new Empleado { Id = 9, Nombre = "Carlos", Cargo = "Desarrollador", EmpresaId = 5, Salario = 4000, Estado = "Ausente" },
             new Empleado { Id = 1, Nombre = "Gonzalo", Cargo = "CEO", EmpresaId = 4, Salario = 6000, Estado = "Trabajando" },
-            new Empleado { Id = 9, Nombre = "Carlos", Cargo = "CEO", EmpresaId = 6, Salario = 4000, Estado = "Ausente" }
+            new Empleado { Id = 9, Nombre = "Carlos", Cargo = "CEO", EmpresaId = 6, Salario = 4000, Estado = "Ausente" },
+            new Empleado { Id = 10, Nombre = "Carlos", Cargo = "Junior", EmpresaId = 5, Salario = 4000, Estado = "Trabajando" },
+            new Empleado { Id = 11, Nombre = "S", Cargo = "Junior", EmpresaId = 4, Salario = 6000, Estado = "Trabajando" },
+            new Empleado { Id = 12, Nombre = "Mario", Cargo = "Junior", EmpresaId = 6, Salario = 4000, Estado = "Trabajando" }
         };
     }
 }
