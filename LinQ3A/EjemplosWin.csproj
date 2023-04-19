@@ -49,6 +49,8 @@
   <ItemGroup>
     <Compile Include="Datos.cs" />
     <Compile Include="dtoProducto.cs" />
+    <Compile Include="Empreado.cs" />
+    <Compile Include="Empresa.cs" />
     <Compile Include="Extensiones.cs" />
     <Compile Include="frmExtensiones.cs">
       <SubType>Form</SubType>

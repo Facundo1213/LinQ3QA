@@ -1,11 +1,12 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using System.Windows.Forms;
 
 namespace EjemplosWin
 {
     public static class Datos
     {
-        public static int[] Numeros = 
+        public static int[] Numeros =
             { 23, 89, 10, 5, 56, 12, 98, 76, 85, 42, 7, 18, 34, 15 };
 
         public static ArrayList MiLista = new ArrayList
@@ -18,5 +19,8 @@ namespace EjemplosWin
             new Producto {Codigo=3,Nombre="Azúcar",Precio=1,Stock=29},
             new Producto {Codigo=1,Nombre="Sal",Precio=2,Stock=516}
         };
+
+        
+        
     }
 }
