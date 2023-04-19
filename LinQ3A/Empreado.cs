@@ -15,7 +15,7 @@ namespace EjemplosWin
         public int Salario { get; set; }
         public int EmpresaId { get; set; }
         public string Estado { get; set; }
-        public static IList<Empleado> empreados = new List<Empleado>
+        public static IList<Empleado> empleados = new List<Empleado>
         {
             new Empleado { Id = 7, Nombre = "Carmen", Cargo = "Desarrollador", EmpresaId = 4, Salario = 4000 , Estado = "Ausente" },
             new Empleado { Id = 7, Nombre = "Carmen", Cargo = "CEO", EmpresaId = 5, Salario = 6000 , Estado = "Trabajando" },

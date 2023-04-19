@@ -51,3 +51,17 @@ C:\Users\Alumno\Downloads\ggg\LinQ3A\obj\Debug\EjemplosWin.csproj.GenerateResour
 C:\Users\Alumno\Downloads\ggg\LinQ3A\obj\Debug\EjemplosWin.csproj.CoreCompileInputs.cache
 C:\Users\Alumno\Downloads\ggg\LinQ3A\obj\Debug\EjemplosWin.exe
 C:\Users\Alumno\Downloads\ggg\LinQ3A\obj\Debug\EjemplosWin.pdb
+C:\Users\fakun\Downloads\Nueva carpeta (3)\LinQ3A\bin\Debug\EjemplosWin.exe.config
+C:\Users\fakun\Downloads\Nueva carpeta (3)\LinQ3A\bin\Debug\EjemplosWin.exe
+C:\Users\fakun\Downloads\Nueva carpeta (3)\LinQ3A\bin\Debug\EjemplosWin.pdb
+C:\Users\fakun\Downloads\Nueva carpeta (3)\LinQ3A\obj\Debug\EjemplosWin.csproj.AssemblyReference.cache
+C:\Users\fakun\Downloads\Nueva carpeta (3)\LinQ3A\obj\Debug\EjemplosWin.csproj.SuggestedBindingRedirects.cache
+C:\Users\fakun\Downloads\Nueva carpeta (3)\LinQ3A\obj\Debug\EjemplosWin.frmExtensiones.resources
+C:\Users\fakun\Downloads\Nueva carpeta (3)\LinQ3A\obj\Debug\EjemplosWin.frmMenu.resources
+C:\Users\fakun\Downloads\Nueva carpeta (3)\LinQ3A\obj\Debug\EjemplosWin.frmQueries1.resources
+C:\Users\fakun\Downloads\Nueva carpeta (3)\LinQ3A\obj\Debug\EjemplosWin.frmQueries2.resources
+C:\Users\fakun\Downloads\Nueva carpeta (3)\LinQ3A\obj\Debug\EjemplosWin.Properties.Resources.resources
+C:\Users\fakun\Downloads\Nueva carpeta (3)\LinQ3A\obj\Debug\EjemplosWin.csproj.GenerateResource.cache
+C:\Users\fakun\Downloads\Nueva carpeta (3)\LinQ3A\obj\Debug\EjemplosWin.csproj.CoreCompileInputs.cache
+C:\Users\fakun\Downloads\Nueva carpeta (3)\LinQ3A\obj\Debug\EjemplosWin.exe
+C:\Users\fakun\Downloads\Nueva carpeta (3)\LinQ3A\obj\Debug\EjemplosWin.pdb

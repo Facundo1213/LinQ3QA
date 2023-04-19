@@ -11,21 +11,28 @@ namespace EjemplosWin
         {
             InitializeComponent();
         }
-        private void btnQuery7_Click(object sender, EventArgs e)
+        
+        private void btnQuery7_Click(object sender, EventArgs e)//BtnEmpresa
         {
             grvResultados.DataSource = Empresa.Empre;
         }
         private void btnQuery2_Click(object sender, EventArgs e)
         {
-            var colecion = from producto in Empresa.Empre
-                           orderby producto.Nombre
-                           select producto;
+            var colecion = from empleado in Empleado.empleados
+                           join empresa in Empresa.Empre on empleado.EmpresaId equals empresa.Id
+                           select new
+                           {
+                               EmpresaId = empresa.Nombre + " " + empleado.EmpresaId,
+                               Nombre = empleado.Nombre,
+                               
+                           };
+
             grvResultados.DataSource = colecion.ToList();
         }
         private void btnQuery3_Click(object sender, EventArgs e)
         {
             
-            var colecion = from item in Empleado.empreados where item.Salario <= 4000
+            var colecion = from item in Empleado.empleados where item.Salario <= 4000
                            orderby item.Salario descending
                            select new
                            {
@@ -39,7 +46,7 @@ namespace EjemplosWin
         }
         private void btnQuery4_Click(object sender, EventArgs e)
         {
-            var colecion = from item in Empleado.empreados
+            var colecion = from item in Empleado.empleados
                            where item.Salario >= 6000
                            orderby item.Salario descending
                            select new
@@ -67,9 +74,16 @@ namespace EjemplosWin
 
         private void btnQuery6_Click(object sender, EventArgs e)
         {
-            var colecion = from producto in Datos.Productos
-                           where producto.Precio > 1 && producto.Stock < 100
-                           select producto;
+            var colecion = from empleados in Empleado.empleados
+                           where empleados.Cargo == "CEO"
+                           select new
+                           {
+                               Cargo = empleados.Cargo,
+                               Nombre = empleados.Nombre,
+                               EmpresaId = empleados.EmpresaId
+
+                           };
+
 
             grvResultados.DataSource = colecion.ToList();
             //lista los producto ordenados por precio mayor 1 y stock menor a 100
@@ -82,7 +96,7 @@ namespace EjemplosWin
 
         private void button1_Click(object sender, EventArgs e)
         {
-            grvResultados.DataSource = Empleado.empreados;
+            grvResultados.DataSource = Empleado.empleados;
         }
 
         private void grvResultados_CellContentClick(object sender, DataGridViewCellEventArgs e)
